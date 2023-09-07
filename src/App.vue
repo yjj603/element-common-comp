@@ -2,19 +2,25 @@
   <div>原始element</div>
   <div class="line">
     <el-button @click="onClick('a')">Default</el-button>
-    <el-input v-model="input" placeholder="Please input" />
+    <el-input v-model="input" placeholder="Please input">
+      <template #suffix> suffix </template>
+    </el-input>
     <el-tag>Tag 1</el-tag>
   </div>
   <div>使用vue原生动态组件</div>
   <div class="line">
     <component :is="ElButton" @click="onClick('b')">Default</component>
-    <component :is="ElInput" v-model="input" placeholder="Please input" />
+    <component :is="ElInput" v-model="input" placeholder="Please input">
+      <template #suffix> suffix </template>
+    </component>
     <component :is="ElTag">Tag 1</component>
   </div>
   <div>自定义动态组件</div>
   <div class="line">
     <ElementCommonComp type="button" @click="onClick('c')">Default</ElementCommonComp>
-    <ElementCommonComp type="input" placeholder="Please input" v-model="input"></ElementCommonComp>
+    <ElementCommonComp type="input" placeholder="Please input" v-model="input">
+      <template #suffix> suffix </template>
+    </ElementCommonComp>
     <ElementCommonComp type="tag">Tag 1</ElementCommonComp>
   </div>
 </template>
