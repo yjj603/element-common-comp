@@ -23,9 +23,13 @@
     </ElementCommonComp>
     <ElementCommonComp type="tag">Tag 1</ElementCommonComp>
   </div>
+  <MyJsx name="123">
+    <div>4567</div>
+  </MyJsx>
 </template>
 
 <script setup>
+import {MyJsx} from '@/components/Test'
 import ElementCommonComp from '@/components/ElementCommonComp.jsx'
 import { ElButton, ElInput, ElTag } from 'element-plus'
 import { ref } from 'vue'
@@ -33,6 +37,7 @@ const input = ref('')
 const onClick = (val) => {
   console.log(val + '按钮点击')
 }
+
 </script>
 
 <style scoped>
