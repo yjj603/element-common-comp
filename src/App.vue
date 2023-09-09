@@ -35,7 +35,7 @@
 
 <script setup>
 import { MyJsx } from '@/components/Test'
-import ElementCommonComp from '@/components/ElementCommonComp.jsx'
+import { ElementCommonComp } from '@/components/ElementCommonComp.jsx'
 import { ElButton, ElInput, ElTag } from 'element-plus'
 const input = ref('')
 const onClick = (val) => {

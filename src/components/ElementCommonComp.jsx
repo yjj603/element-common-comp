@@ -1,4 +1,4 @@
-export default defineComponent({
+export const ElementCommonComp = defineComponent({
   props: {
     type: {
       type: String,
