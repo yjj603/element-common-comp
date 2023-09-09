@@ -1,6 +1,3 @@
-import { defineComponent } from 'vue'
-import { ElButton, ElInput, ElTag } from 'element-plus'
-
 export default defineComponent({
   props: {
     type: {
